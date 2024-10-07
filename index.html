@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+           <div class="header-card">
+                <h1>My Book Library</h1>
+                <button id="add-btn" class="add-book-btn">+ Add Book +</button>
+           </div>
+        </div>
+        <div class="book-items">
+            <div class="card">
+                <p class="title">Article Title</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+              </div>
+              <div class="card">
+                <p class="title">Article Title</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+              </div>
+              <div class="card">
+                <p class="title">Article Title</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+              </div>
+              <div class="card">
+                <p class="title">Article Title</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+              </div>
+              
+              
+
+              
+
+        </div>
+        <dialog id="bookDialogue" class="dialog">
+            <form class="dialog-form">
+                <label for="title">Enter Book title:</label>
+                <input type="text" id="title" required>
+                <label for="author">Author:</label>
+                <input type="text" id="author" required>
+                <label for="pages">Pages:</label>
+                <input type="number" id="pages" required min="1">
+                <label for="isRead">Have you read it?</label>
+                <select id="isRead" required>
+                  <option value="true">Yes</option>
+                  <option value="false">No</option>
+                </select>
+                <div class="form-buttons">
+                  <button  value="cancel" formmethod="dialog" class="cancel-btn">Cancel</button>
+                  <button id="confirm" value="default">Confirm</button>
+                </div>
+            </form>
+        </dialog>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
